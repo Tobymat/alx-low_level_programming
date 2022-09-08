@@ -3,7 +3,7 @@
 /**
  * printf - prints "with proper grammar, but the outcome is a piece of art,"
  *
- * main - "does not return a value"
+ * main - prints "with proper grammar, but the outcome is a piece of art,"
  *
  * Return: 0 if answer is correct, 1 otherwise
  */
