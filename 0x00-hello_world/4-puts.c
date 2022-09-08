@@ -9,10 +9,10 @@ int main(void)
  * main function runs the program
  */
 
-{
+	{
 	puts("Programming is like building a multilingual puzzle\n");
-		return (1);
-	/**
-	 * return returns a value if incorrect
-	 */
-}
+		return (0);
+	}
+/**
+ * return returns a value if incorrect
+ */
