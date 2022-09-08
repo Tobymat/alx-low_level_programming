@@ -2,8 +2,10 @@
 
 /**
  * Program to printout a value
- * Main function runs the code
- * return no value if correct
+ *
+ * Main- does not return a value
+ *
+ * Return: 0 if answer is correct, 1 otherwise
  */
 
 int main(void)
