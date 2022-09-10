@@ -9,9 +9,7 @@
 
 int main(void)
 {
-	char unastr[] = "Programming is like building a multilingual puzzle";
+	puts("Programming is like building a multilingual puzzle");
 	
-	puts(unastr);
-
 	return (0);
 }
