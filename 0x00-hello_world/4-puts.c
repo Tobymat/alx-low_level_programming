@@ -1,18 +1,14 @@
 #include <stdio.h>
 /**
- * A printout program
+ * main - used to invoke the code at runtime
+ *
+ * puts - prints"programming is like building a multilingual puzzle"
+ *
+ * Return: 0 if the expression is false, 1 if otherwise
  */
 
 int main(void)
-
-/**
- * main function runs the program
- */
-
-	{
+{
 	puts("Programming is like building a multilingual puzzle\n");
-		return (0);
-	}
-/**
- * return returns a value if incorrect
- */
+	return (0);
+}
