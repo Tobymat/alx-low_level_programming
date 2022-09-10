@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * printf - prints "with proper grammar, but the outcome is a piece of art,"
+ * main - executes the code in program
  *
- * main - prints "with proper grammar, but the outcome is a piece of art,"
+ * printf - prints "with proper grammar, but the outcome is a piece of art,"
  *
  * Return: 0 if answer is correct, 1 otherwise
  */
