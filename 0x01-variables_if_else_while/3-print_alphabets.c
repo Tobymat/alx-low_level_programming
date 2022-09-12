@@ -13,7 +13,7 @@ int main(void)
 	for (ah = 'a'; ah < 'z'; ah++)
 	{
 		putchar(ah);
-	} else if (ah = 'A'; ah < 'Z'; ah++)
+	} for (ah = 'A'; ah < 'Z'; ah++)
 	{
 		putchar(ah);
 	}
