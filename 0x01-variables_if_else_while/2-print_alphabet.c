@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	char *a = {a..z}
+	char *a = [a-z]
 	putchar(a);
 }
