@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * putchar - prints "lowercase alphabets"
+ * putchar - prints 'lowercase alphabets'
  *
  * Return: 0 if false and 1 if true
  *
@@ -17,6 +17,6 @@ int main(void)
 	{
 		putchar(ha);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
