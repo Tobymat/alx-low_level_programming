@@ -8,6 +8,12 @@
 
 int main(void)
 {
-	char *a = [a-z]
-	putchar(a);
+	char a;
+	
+	for (a = 'a'; a <= 'z'; a++)
+	{
+		putchar(a);
+	}
+	putchar("\n");
+	return (0);
 }
