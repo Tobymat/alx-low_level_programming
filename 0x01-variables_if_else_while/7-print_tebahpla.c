@@ -10,10 +10,9 @@ int main(void)
 {
 	char sh;
 
-	while(sh = z && sh <= a)
+	for (sh = z;sh >= a; sh++)
 	{
 		putchar(sh);
-		sh++;
 	}
 	putchar('\n');
 	return (0);
