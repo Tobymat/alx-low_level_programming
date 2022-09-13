@@ -10,7 +10,7 @@ int main(void)
 {
 	int ws;
 
-	for (ws = 0; ws < 10; ws++)
+	for (ws = 28; ws < 38; ws++)
 	{
 		putchar(ws);
 	}
