@@ -8,6 +8,8 @@
 
 int main(void)
 {
+	char sh;
+
 	while(sh = z && sh <= a)
 	{
 		putchar(sh);
