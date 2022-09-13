@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  * putchar - print lowercase alphabets
  * Return: 0 if false and 1 if otherwise
  */
