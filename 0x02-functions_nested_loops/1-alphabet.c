@@ -7,9 +7,10 @@
  * Return: 0 if false and 1 if otherwise
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	_putchar i;
+	char i;
+
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
