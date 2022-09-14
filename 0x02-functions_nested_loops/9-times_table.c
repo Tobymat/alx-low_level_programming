@@ -3,9 +3,7 @@
 
 /**
  * times_table - prints the 9 times table
- *
  * Return: 0 if false and 1 if otherwise
- *
  */
 
 void times_table(void)
@@ -40,4 +38,4 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-}		
+}	
