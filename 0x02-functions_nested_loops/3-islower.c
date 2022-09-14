@@ -8,10 +8,10 @@
 
 int _islower(int c)
 {
-	int i;
+	c = i;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		return (1\n);
+		return (1);
 	}
 	return (0);
