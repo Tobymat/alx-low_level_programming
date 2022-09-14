@@ -8,5 +8,5 @@
 
 int _isalpha(int c)
 {
-	return (c = 65 && c = 122);
+	return ((c = 'a' && c = 'z' || (c = 'A' && c = 'Z'));
 }
