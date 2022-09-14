@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * _isaplha - checks if character is an alphabet
+ * _isalpha - checks if character is an alphabet
  * @c: character to check
+ * Return: 0 if false and 1 if otherwise
  */
 
 int _isalpha(int c)
