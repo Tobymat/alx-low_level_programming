@@ -3,7 +3,8 @@
 
 /**
  * main - check the code
- *
+ *_isupper - function to check for uppercase character
+ * @c: print alphabet
  * Return: Always 0
  */
 
@@ -11,10 +12,12 @@ int _isupper(int c)
 {
 	char c;
 
-	for (c >= 'A'; c <= 'Z'; c++)
+	if (c >= 'A' && c <= 'Z')
 	{
-		_putchar(c);
 		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
