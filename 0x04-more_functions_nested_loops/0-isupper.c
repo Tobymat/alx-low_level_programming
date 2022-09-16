@@ -14,7 +14,8 @@ int _isupper(int c)
 
 	c = 'A';
 	_putchar("%c: %d\n", c, _isupper(c));
+	return (1);
 	c = 'a';
 	_putchar("%c: %d\n", c, _isupper(c));
-	return (1);
+	return (0);
 }
