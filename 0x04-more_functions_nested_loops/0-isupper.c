@@ -8,17 +8,13 @@
  * Return: Always 0
  */
 
-int _isupper(int c)
+int main(void)
 {
 	char c;
 
-	if (c >= 'A' && c <= 'Z')
-	{
-		_putchar(c);
-		return (1);
-	} else if (c >= 'a' && <= 'z')
-	{
-		_putchar(c);
-		return (0);
-	}
+	c = 'A';
+	_putchar(_isupper(c));
+	c = 'a';
+	_putchar(_isupper(c));
+	return (0);
 }
