@@ -14,7 +14,7 @@ int main(void)
 
 	c = 'A';
 	_putchar(_isupper(c));
-	c = 'a';
+	c = 'Z';
 	_putchar(_isupper(c));
 	return (0);
 }
