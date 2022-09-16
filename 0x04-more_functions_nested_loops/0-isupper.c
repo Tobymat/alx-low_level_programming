@@ -12,10 +12,13 @@ int _isupper(int c)
 {
 	char c;
 
-	c = 'A';
-	_putchar("%c: %d\n", c, _isupper(c));
-	return (1);
-	c = 'a';
-	_putchar("%c: %d\n", c, _isupper(c));
-	return (0);
+	if (c >= 'A' && c <= 'Z')
+	{
+		_putchar(c);
+		return (1);
+	} else if (c >= 'a' && <= 'z')
+	{
+		_putchar(c);
+		return (0);
+	}
 }
