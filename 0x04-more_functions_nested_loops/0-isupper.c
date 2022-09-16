@@ -2,9 +2,12 @@
 
 /**
  * _isupper - function that checks for uppercase alphabet
- * @c: alphabet to be printed
+ *
+ * @c: character to check
+ *
  * Return: 1 always and 0 if otherwise
  */
+
 
 int _isupper(int c)
 {
