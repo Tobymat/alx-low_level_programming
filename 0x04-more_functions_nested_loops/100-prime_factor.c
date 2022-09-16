@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <math.h>
+#include "main.h"
 
 /**
  * maxPrimeFactors - function to check for largest prime number
  * maxPrime - lowest variable
+ * @n: integer to check
  * Return: 0 if false or 1 if otherwise
  */
 
