@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include "main.h"
 
 /**
  * maxPrimeFactors - function to check for largest prime number
@@ -10,6 +11,7 @@
 
 int maxPrimeFactors(int n)
 {
+	n = 612852475143
 	int i, max = -1;
 
 	while (n % 2 == 0)
@@ -29,5 +31,6 @@ int maxPrimeFactors(int n)
 	{
 		max = n;
 	}
+	_putchar('\n');
 	return max;
 }
