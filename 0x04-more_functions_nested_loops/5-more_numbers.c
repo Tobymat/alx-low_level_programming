@@ -3,6 +3,7 @@
 /**
  * more_numbers - function to print 10 times the numbers
  * _putchar - prints
+ * Return: No return
  */
 
 void more_numbers(void)
