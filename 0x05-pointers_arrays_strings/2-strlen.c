@@ -9,9 +9,10 @@
 
 int _strlen(char *s)
 {
+	*s = j;
 	int i;
 
-	for (i = 0; i < s; i++)
+	for (i = 0; i < j; i++)
 	{
 		_putchar(i);
 	}
