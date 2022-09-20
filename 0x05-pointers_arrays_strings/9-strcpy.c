@@ -2,8 +2,8 @@
 
 /**
  * *_strcpy - function that copies string
- * @*dest: character to check
- * @*src: character to check
+ * @dest: character to check
+ * @src: character to check
  *
  * Return: Always 0
  */
