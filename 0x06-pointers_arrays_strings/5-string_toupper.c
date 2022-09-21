@@ -2,6 +2,8 @@
 
 /**
  * string_toupper - function that changes lowercase to uppercase
+ * @s: character to check
+ * @i: integer
  *
  * Return: nothing
  */

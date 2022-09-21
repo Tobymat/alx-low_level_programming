@@ -5,6 +5,8 @@
  * @dest: first string
  * @src: second string
  * @n: integer
+ * @i: second integer
+ *
  * Return: Always 0
  */
 

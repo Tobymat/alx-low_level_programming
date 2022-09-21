@@ -5,6 +5,9 @@
  * @dest: first string
  * @src: second string
  * @n: integer
+ * @i: first integer
+ * @len: second integer
+ *
  * Return: dest
  */
 

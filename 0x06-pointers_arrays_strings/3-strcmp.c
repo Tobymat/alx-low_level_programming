@@ -4,26 +4,28 @@
  * strcmp - function that compares two strings
  * @s1: first character
  * @s2: second character
+ * @i: first integer
+ * @j: second integer
+ *
  * Return: Always 0
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 == *s2)
-	{
-		if (*s1 == '\0' || *s2 == '\0')
-			break;
+	int i, j;
 
-		s1++;
-		s2++;
-	}
-
-	if (*s1 == '\0' && *s2 == '\0')
+	for (i = 0; s1[i] != '\0'; ++i)
 	{
-		return (0);
+		if (s1[i] > s2[i])
+		{
+			j = s1[i] - s2[i];
+			return (j);
+		}
+		else if (s1[i] < s2[i])
+		{
+			j = s1[i] - s2[i];
+			return (j);
+		}
 	}
-	else
-	{
-		return (1);
-	}
+	return (0);
 }
