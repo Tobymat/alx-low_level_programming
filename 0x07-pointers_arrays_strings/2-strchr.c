@@ -12,8 +12,16 @@ char *_strchr(char *s, char c)
 {
 	char i;
 
-	if (c[i] == 'c')
-		return (s);
-	else
-		return (NULL);
+	for (i = 0; i < s; i++)
+	{
+		if (i == 'c')
+		{
+			return (s);
+		}
+		else if (!(i == 'c'))
+		{
+			return (NULL);
+		}
+	}
+
 }
