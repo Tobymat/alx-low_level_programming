@@ -11,6 +11,7 @@
 
 char *rot13(char *str)
 {
+	int i = 0, j;
 	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char s1[] = "NOPQRSTUVWXYZABCDEFGHIJKMnopqrstuvwxyzabcdefghijklm";
 
