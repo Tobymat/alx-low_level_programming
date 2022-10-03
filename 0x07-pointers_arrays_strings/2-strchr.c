@@ -10,18 +10,21 @@
 
 char *_strchr(char *s, char c)
 {
-	char i;
+	int i, j;
+	*s = c;
 
-	for (i = 0; i < s; i++)
+	for (i = 0; i < c -1; i++)
 	{
-		if (i == 'c')
+		for (j = 0; j < i; j++)
 		{
-			return (s);
-		}
-		else if (!(i == 'c'))
-		{
-			return (NULL);
+			if (j[i] == 'c')
+			{
+				returnj[i];
+			} else if (!j[i] == 'c')
+			{
+				return(NULL);
+			}
 		}
 	}
-
+	return(s);
 }
