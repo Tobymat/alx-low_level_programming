@@ -14,8 +14,8 @@ char *_strchr(char *s, char c)
 
 	for (i = 0; i < s && s != '\0'; i++)
 	{
-		if (s[i] = c)
-			return(c);
+		if (s[i] = 'c')
+			return(s[i]);
 		else
 			return(NULL);
 	}
