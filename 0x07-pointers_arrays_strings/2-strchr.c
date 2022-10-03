@@ -10,8 +10,13 @@
 
 char *_strchr(char *s, char c)
 {
-	if (c == *s)
-		return(c);
-	else
-		return(NULL);
+	char i;
+
+	for (i = 0; i < s; i++)
+	{
+		if (s[i] == c)
+			return(c);
+		else
+			return(NULL);
+	}
 }
