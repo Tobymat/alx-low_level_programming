@@ -11,8 +11,8 @@
 char *rot13(char *s)
 {
 	int i;
-	char n = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
-	char r = nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
+	char *n = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
+	char *r = nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
 
 	for (n = 0; n < 52; n++)
 	{
@@ -20,7 +20,7 @@ char *rot13(char *s)
 		{
 			if (n[i])
 			{
-				n = r;
+				*n = *r;
 			}
 		}
 	}
