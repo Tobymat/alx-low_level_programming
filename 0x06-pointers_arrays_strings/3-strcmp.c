@@ -1,12 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcmp - function that compares two strings
  * @s1: first character
  * @s2: second character
- * @i: first integer
- * @j: second integer
- *
  * Return: Always 0
  */
 
