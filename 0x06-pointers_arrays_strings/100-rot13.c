@@ -18,7 +18,7 @@ char *rot13(char *s)
 	{
 		for (r = 0; r < 52; r++)
 		{
-			if (n[i])
+			if (*s[0])
 			{
 				i = n;
 				*n = *r;
