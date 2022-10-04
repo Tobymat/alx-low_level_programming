@@ -10,7 +10,7 @@
 
 char *rot13(char *s)
 {
-	int i;
+	int tmp;
 	char *n = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
 	char *r = nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
 
@@ -20,9 +20,9 @@ char *rot13(char *s)
 		{
 			if (*s[0])
 			{
-				i = n;
+				tmp = *n;
 				*n = *r;
-				*r = i;
+				*r = tmp;
 			}
 		}
 	}
