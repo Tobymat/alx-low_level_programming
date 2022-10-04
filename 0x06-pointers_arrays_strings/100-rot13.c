@@ -1,30 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * rot13 - function that rotates
- * @str: input string
- * @s: first characters
- * @s1: second characters
+ * rot13 - function that encodes a string
+ * @s: character to check
  * Description: encodes a string using rot13
- * Return: Always (0)
+ * Return: Always 0
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int i = 0, j;
+	int i;
+	char n = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
+	char r = nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
 
-	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char s1[] = "NOPQRSTUVWXYZABCDEFGHIJKMnopqrstuvwxyzabcdefghijklm";
-
-	for (; str[i] != '\0'; i++)
+	for (n = 0; n != '\0'; n++)
 	{
-		for (j = 0; j <= 51; j++)
+		for (r = 0; r != '\0'; r++)
 		{
-			if (s[j] == str[i])
+			if (*s[i])
 			{
-				str[i] = s1[j];
+				r = n;
 			}
 		}
 	}
-	return (str);
+	return(0);
 }
