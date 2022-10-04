@@ -6,9 +6,6 @@
  * @dest: first string
  * @src: second string
  * @n: integer
- * @i: first integer
- * @len: second integer
- *
  * Return: a ptr to dest
  */
 
@@ -21,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		len++;
 	}
-	while (src[i] != '0' && i < n)
+	while (src[i] != '\0' && i < n)
 	{
 		dest[len] = src[i];
 		++i;
