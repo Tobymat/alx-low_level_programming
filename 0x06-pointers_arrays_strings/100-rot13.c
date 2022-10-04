@@ -20,7 +20,9 @@ char *rot13(char *s)
 		{
 			if (n[i])
 			{
+				i = n;
 				*n = *r;
+				*r = i;
 			}
 		}
 	}
