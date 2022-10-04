@@ -5,7 +5,6 @@
  * _strchr - function that locates a character
  * @s: first character
  * @c: second character
- *
  * Return: null
  */
 
@@ -15,13 +14,13 @@ char *_strchr(char *s, char c)
 	{
 		if (c == *s)
 		{
-			return(s);
+			return (s);
 		}
 		s++;
 	}
 	if (!c)
 	{
-		return(s);
+		return (s);
 	}
-	return(NULL);
+	return (NULL);
 }
