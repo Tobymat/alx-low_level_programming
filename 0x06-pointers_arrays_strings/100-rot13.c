@@ -10,19 +10,17 @@
 
 char *rot13(char *s)
 {
-	int tmp, i;
-	char *n= abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
-	char *r= nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
+	int t, i;
+	char n[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char r[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (n = 1; n <= 52; n++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (r = 1; r <= 52; r++)
+		for (t = 1; t <= 52; t++)
 		{
-			if (*s[i])
+			if (n[t] == s[i])
 			{
-				tmp = *n;
-				*n = *r;
-				*r = tmp;
+				s[i] = r[t];
 			}
 		}
 	}
