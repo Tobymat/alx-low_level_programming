@@ -14,9 +14,9 @@ char *rot13(char *s)
 	char *n= abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
 	char *r= nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
 
-	for (n = 0; n <= 52; n++)
+	for (n = 1; n <= 52; n++)
 	{
-		for (r = 0; r <= 52; r++)
+		for (r = 1; r <= 52; r++)
 		{
 			if (*s[i])
 			{
