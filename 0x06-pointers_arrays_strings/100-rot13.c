@@ -14,15 +14,15 @@ char *rot13(char *s)
 	char n = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
 	char r = nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
 
-	for (n = 0; n != '\0'; n++)
+	for (n = 0; n < 52; n++)
 	{
-		for (r = 0; r != '\0'; r++)
+		for (r = 0; r < 52; r++)
 		{
-			if (*s[i])
+			if (n[i])
 			{
-				r = n;
+				n = r;
 			}
 		}
 	}
-	return(0);
+	return (0);
 }
