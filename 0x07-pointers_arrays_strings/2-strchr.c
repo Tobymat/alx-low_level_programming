@@ -6,7 +6,7 @@
  * @s: first character
  * @c: second character
  *
- * Return: a pointer
+ * Return: null
  */
 
 char *_strchr(char *s, char c)
@@ -19,7 +19,6 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
-
 	if (!c)
 	{
 		return(s);
