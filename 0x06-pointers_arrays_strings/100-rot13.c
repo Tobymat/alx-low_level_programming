@@ -10,15 +10,15 @@
 
 char *rot13(char *s)
 {
-	int tmp;
-	char *n = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
-	char *r = nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
+	int tmp, i;
+	char *n= abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;
+	char *r= nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
 
 	for (n = 0; n <= 52; n++)
 	{
 		for (r = 0; r <= 52; r++)
 		{
-			if (*s[0])
+			if (*s[i])
 			{
 				tmp = *n;
 				*n = *r;
@@ -26,5 +26,5 @@ char *rot13(char *s)
 			}
 		}
 	}
-	return (0);
+	return (s);
 }
