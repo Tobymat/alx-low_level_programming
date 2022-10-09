@@ -22,10 +22,10 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				break;
 			}
-			else
-			{
-				break;
-			}
+		}
+		if (!accept[j])
+		{
+			break;
 		}
 	}
 	return (i);
