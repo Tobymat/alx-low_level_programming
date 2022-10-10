@@ -34,6 +34,7 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
+	
 	if (l == 1)
 	{
 		return (&s[k]);
