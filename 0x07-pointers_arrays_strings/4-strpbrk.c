@@ -5,7 +5,6 @@
  * _strpbrk - entry point
  * @s: first character
  * @accept: second character
- *
  * Description: a function that searches a string for
  * any of a set of bytes
  * Return: a pointer to the byte in s
@@ -20,7 +19,6 @@ char *_strpbrk(char *s, char *accept)
 		continue;
 	}
 	k = i;
-	
 	for (i = 0; accept[i] != '\0'; i++)
 	{
 		for(j = 0; s[j] != '\0'; j++)
@@ -35,7 +33,6 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	
 	if (l == 1)
 	{
 		return (&s[k]);
