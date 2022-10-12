@@ -10,13 +10,13 @@
 
 void print_number(int n)
 {
-	for (n = 0; n != '\0'; n++)
-	{
-		_putchar(n);
-	}
 	while (n = 'a' && n <= 'z' || n = 'A' && n <= 'Z')
 	{
 		break;
 	}
-	_putchar('\n');
+	for (n = 0; n != '\0'; n++)
+	{
+		_putchar(n);
+	}
+	_putchar(\n);
 }
