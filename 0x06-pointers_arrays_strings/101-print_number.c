@@ -12,10 +12,7 @@ void print_number(int n)
 {
 	for (n = 0; n != '\0'; n++)
 	{
-		if (!(n = 'a' && <= 'z'))
-		{
-			_putchar(n);
-		}
+		_putchar(n);
 	}
 	_putchar('\n');
 }
