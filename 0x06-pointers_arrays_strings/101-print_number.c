@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_number - entry point
@@ -9,7 +10,7 @@
 
 void print_number(int n)
 {
-	for (n = 'a'; n <= 'z'; n++)
+	for (n = 0; n != '\0'; n++)
 	{
 		if (!(n = 'a' && <= 'z'))
 		{
