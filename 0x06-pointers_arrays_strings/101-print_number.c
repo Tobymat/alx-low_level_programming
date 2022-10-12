@@ -14,5 +14,9 @@ void print_number(int n)
 	{
 		_putchar(n);
 	}
+	while (n = 'a' && n <= 'z' || n = 'A' && n <= 'Z')
+	{
+		break;
+	}
 	_putchar('\n');
 }
