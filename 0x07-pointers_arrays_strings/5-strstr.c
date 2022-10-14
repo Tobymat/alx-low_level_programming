@@ -11,12 +11,12 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int *i, *j;
+	char *i, *j;
 
 	while (*haystack)
 	{
-		i = *haystack;
-		j = *needle;
+		i = haystack;
+		j = needle;
 		while (*haystack && *j && *haystack == *j)
 		{
 			haystack++;
