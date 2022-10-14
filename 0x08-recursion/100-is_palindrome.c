@@ -26,15 +26,15 @@ int s_len(char *s)
  * Return: the string
  */
 
-int check_palindrome(char *i, int j, int len)
+int check_palindrome(char *s, int j, int len)
 {
-	if (i[j] == i[len / 2])
+	if (s[j] == s[len / 2])
 	{
 		return (1);
 	}
-	if (i[j] == i[len - j - 1])
+	if (s[j] == s[len - j - 1])
 	{
-		return (check_palindrome(i, len, j + 1));
+		return (check_palindrome(s, len, j + 1));
 	}
 	return (0);
 }
@@ -53,7 +53,7 @@ int is_palindrome(char *s)
 	i = 0;
 	len = s_len(s);
 
-	if (!s)
+	if (!*s)
 	{
 		return (1);
 	}
