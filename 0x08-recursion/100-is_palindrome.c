@@ -32,7 +32,7 @@ int check_palindrome(char *i, int j, int len)
 	{
 		return (1);
 	}
-	if (i[j] == i[len - i - 1])
+	if (i[j] == i[len - j - 1])
 	{
 		return (check_palindrome(i, len, j + 1));
 	}
