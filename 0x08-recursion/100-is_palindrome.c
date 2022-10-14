@@ -19,22 +19,22 @@ int s_len(char *s)
 
 /**
  * check_palindrome - checks string
- * @i: input character
- * @j: an interator
+ * @s: input character
+ * @i: an interator
  * @len: string length
  * Description: checking if string is a palindrome
  * Return: the string
  */
 
-int check_palindrome(char *s, int j, int len)
+int check_palindrome(char *s, int i, int len)
 {
-	if (s[j] == s[len / 2])
+	if (s[i] == s[len / 2])
 	{
 		return (1);
 	}
-	if (s[j] == s[len - j - 1])
+	if (s[i] == s[len - i - 1])
 	{
-		return (check_palindrome(s, len, j + 1));
+		return (check_palindrome(s, len, i + 1));
 	}
 	return (0);
 }
