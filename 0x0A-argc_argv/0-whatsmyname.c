@@ -26,7 +26,7 @@ int main(int argc __attribute__((unused)), char *argv[])
  * Return: Nothing
  */
 
-void print_name(char *str)
+void print_string(char *str)
 {
 	int i = 0;
 
