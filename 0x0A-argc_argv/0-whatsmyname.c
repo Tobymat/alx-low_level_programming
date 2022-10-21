@@ -28,9 +28,9 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 void print_name(char *str)
 {
-	int i = 0;
+	int i;
 
-	for (; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		putchar(str[i]);
 	}
