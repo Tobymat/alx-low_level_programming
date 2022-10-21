@@ -11,6 +11,11 @@
 
 int main(int argc, char *argv[])
 {
-	printf("The program name is: %s\n", argv[0]);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("The program name is: %s\n", argv[i]);
+	}
 	return (0);
 }
