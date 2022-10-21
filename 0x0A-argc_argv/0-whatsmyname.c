@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
+void print_name(char *str)
+
 /**
  * main - entry point
  * @argc: argument count
@@ -9,13 +11,27 @@
  * Return: Always 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int i;
+	print_name(argv[0]);
+	putchar('\n');
 
-	for (i = 0; i < argc; i++)
-	{
-		printf("The program name is: %s\n", argv[i]);
-	}
 	return (0);
+}
+
+/**
+ * print_name - prints all characters of a string
+ * Description: function to print a string
+ * @str: pointer to a string
+ * Return: Nothing
+ */
+
+void print_name(char *str)
+{
+	int i = 0;
+
+	for (; i != '\0'; i++)
+	{
+		putchar(str[i]);
+	}
 }
