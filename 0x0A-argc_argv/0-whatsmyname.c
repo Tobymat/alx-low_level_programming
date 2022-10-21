@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-void print_name(char *str)
+void print_string(char *str)
 
 /**
  * main - entry point
@@ -13,14 +13,14 @@ void print_name(char *str)
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	print_name(argv[0]);
+	print_string(argv[0]);
 	putchar('\n');
 
 	return (0);
 }
 
 /**
- * print_name - prints all characters of a string
+ * print_string - prints all characters of a string
  * Description: function to print a string
  * @str: pointer to a string
  * Return: Nothing
@@ -28,10 +28,11 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 void print_name(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
 		putchar(str[i]);
+		i++;
 	}
 }
