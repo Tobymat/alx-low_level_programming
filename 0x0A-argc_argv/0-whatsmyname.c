@@ -9,8 +9,8 @@
  * Return: Always 0
  */
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("The program name: %d is %s\n", argc, argv[i]);
+	printf("The program name is: %d\n", argc);
 	return (0);
 }
