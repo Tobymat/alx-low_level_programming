@@ -1,5 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <strings.h>
+
+/**
+ * check - checks if a given char is number or not
+ * @i: input char
+ * Return: Always 0
+ */
+
+int check(char *i)
+{
+	int j, num, len;
+
+	j = num = 0;
+	len = strlen(i);
+	while (j < len)
+	{
+		if (i[j] < '0' || i[j] > '9')
+		{
+			return (-1);
+		}
+		else
+			num = num * 10 + (i[j] - '0');
+		j++;
+	}
+	return (num);
+}
 
 /**
  * main - entry point
@@ -11,31 +37,19 @@
 
 int main(int argc, char *argv[])
 {
-	int count, i, j, result;
+	int i, num, result;
 
-	count = i = j = result = 0;
-	if (argc > 0)
+	result = 0;
+	for (i = 1; i < argc; i++)
 	{
-		while (count < argc)
+		num = check(argv[i]);
+		if (num == -1)
 		{
-			if (argc == 3)
-			{
-				if (count == 0)
-					printf("0\n");
-				else if (count == 1)
-					i = atoi(argv[count]);
-				else if (count == 2)
-					j = atoi(argv[count]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-			result = (i + j);
-			count++;
+			printf("Error\n");
+			return (1);
 		}
-		printf("%d\n", result);
+		result += num;
 	}
+	printf("%d\n", result);
 	return (0);
 }
