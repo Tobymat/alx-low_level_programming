@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-void print_string(char *str)
-
 /**
  * main - entry point
  * @argc: argument count
@@ -11,28 +9,16 @@ void print_string(char *str)
  * Return: Always 0
  */
 
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
-	print_string(argv[0]);
-	putchar('\n');
+	int i;
 
-	return (0);
-}
-
-/**
- * print_string - prints all characters of a string
- * Description: function to print a string
- * @str: pointer to a string
- * Return: Nothing
- */
-
-void print_string(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
+	for (i = 0; i < argc; i++)
 	{
-		putchar(str[i]);
-		i++;
+		if (argc == 1)
+			printf("%s\n", argv[i]);
+		else
+			break;
 	}
+	return (0);
 }
