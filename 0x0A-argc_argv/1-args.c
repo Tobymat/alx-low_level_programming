@@ -11,6 +11,11 @@
 
 int main(int argc, char *argv[])
 {
-	printf("The number of arguments is: %d", argc);
+	int i;
+
+	for (i = 0; argv[i] != '\0'; i++)
+	{
+		printf("%d\n", argv)
+	}
 	return (0);
 }
