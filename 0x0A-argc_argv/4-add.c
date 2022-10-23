@@ -28,11 +28,10 @@ int check(char *i)
 }
 
 /**
- * main - entry point
- * @argc: number of variables
+ * main - program that adds two numbers
+ * @argc: argument count
  * @argv: inputted variables
- * Description: a program that adds two variables
- * Result: An integer
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
