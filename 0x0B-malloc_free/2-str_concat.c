@@ -12,7 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *st;
-	char *nu = " ";
+	char *nu = "";
 	unsigned int i, j, s, p,;
 
 	i = j = s = p = 0;
