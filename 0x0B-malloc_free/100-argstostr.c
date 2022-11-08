@@ -26,9 +26,12 @@ char *argstostr(int ac, char **av)
 		s++;
 	}
 	s += 0;
-	ar = malloc(s * sizeof(char));
+	ar = malloc((s + 1) * sizeof(char));
 	if (ar == NULL)
+	{
+		free(ar);
 		return (NULL);
+	}
 	str = ar;
 	for (i = 0; i < ac; i++)
 	{
@@ -43,5 +46,4 @@ char *argstostr(int ac, char **av)
 		ar++;
 	}
 	return (str);
-	free(ar);
 }
