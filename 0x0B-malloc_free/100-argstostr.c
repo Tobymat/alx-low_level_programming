@@ -43,4 +43,5 @@ char *argstostr(int ac, char **av)
 		ar++;
 	}
 	return (str);
+	free(ar);
 }
