@@ -22,9 +22,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = nul;
 	while (s1[x] != '\0')
-		x++;
+		x += 1;
 	while (s2[y] != '\0')
-		y++;
+		y += 1;
 	y++;
 	if (n >= y)
 		n = y;
@@ -35,10 +35,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s1[x] != '\0')
 	{
 		st[x] = s1[x];
-		x++;
+		x += 1;
 	}
 	y = 0;
-	while (s2[y] != '\0')
+	while (s2[y] != '\0' && y < n)
 	{
 		st[x] = s2[y];
 		x++;
