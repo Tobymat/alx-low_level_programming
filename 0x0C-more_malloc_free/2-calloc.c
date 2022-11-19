@@ -18,20 +18,20 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	st = malloc(nmemb * size);
 	if (st == NULL)
 		return (NULL);
-	_memfil(st, 0, nmemb * size);
+	_memset(st, 0, nmemb * size);
 	return (st);
 }
 /**
- * _memfil - function that  fills memory with a constant byte
+ * _memset - function that  fills memory with a constant byte
  * @s: memory area to fill
  * @j: constant byte
  * @n: size of bytes
  * Return: char
  */
 
-char *_memfil(char *s, char j, unsigned int n)
+char *_memset(char *s, char j, unsigned int n)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
 	while (i < n)
 	{
